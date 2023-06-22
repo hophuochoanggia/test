@@ -8,7 +8,20 @@ export default {
 			const datum = {};
 			
 			title.forEach((t, i) => {
-				datum[t] = item[i];
+				if (t === 'Application') {
+					datum.App_id = item[i];	
+				} else if(t === 'Ngày đăng ký') {
+					const [day, month, year] = item[i].replace(' thg', ',').split(', ');
+					datum.App_date = `${day.padStart(2, '0')}/${month.padStart(2, '0')}/${year}`;
+				} else if (t === 'Tên khách hàng') {
+					datum.Name = item[i];
+				} else if (t === 'SĐT') {
+					datum.Phone_number = item[i];
+				} else {
+					datum[t] = item[i];	
+				}
+				datum.ID_number = '';
+				datum.Approve_date = 'First';
 			})
 			
 			

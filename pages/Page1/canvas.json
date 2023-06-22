@@ -660,16 +660,10 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.xn__Ngy_ng_k_0ya01a6bxj.computedValue"
-                },
-                {
                   "key": "primaryColumns.xn__Ngun_ng_k_89a5dxj5470b.computedValue"
                 },
                 {
                   "key": "primaryColumns.xn__ST_nma.computedValue"
-                },
-                {
-                  "key": "primaryColumns.xn__Tn_khch_hng_g7ai5j.computedValue"
                 },
                 {
                   "key": "primaryColumns.xn__Tnh_thnh_4ya8767e.computedValue"
@@ -681,10 +675,19 @@
                   "key": "primaryColumns.xn__Tnh_trng_lead_iib4915i.computedValue"
                 },
                 {
-                  "key": "primaryColumns.Application.computedValue"
+                  "key": "primaryColumns.xn__Tnh_trng_ph_duyt_2qbz4165l9va.computedValue"
                 },
                 {
-                  "key": "primaryColumns.xn__Tnh_trng_ph_duyt_2qbz4165l9va.computedValue"
+                  "key": "primaryColumns.App_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.App_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Approve_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Name.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -722,7 +725,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1687407131259,
+              "columnUpdatedAt": 1687408468868,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -730,15 +733,16 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "xn__Ngy_ng_k_0ya01a6bxj",
                 "xn__Ngun_ng_k_89a5dxj5470b",
                 "xn__ST_nma",
-                "xn__Tn_khch_hng_g7ai5j",
                 "xn__Tnh_thnh_4ya8767e",
                 "xn__Loi_th_xc8bmi",
                 "xn__Tnh_trng_lead_iib4915i",
-                "Application",
-                "xn__Tnh_trng_ph_duyt_2qbz4165l9va"
+                "xn__Tnh_trng_ph_duyt_2qbz4165l9va",
+                "App_date",
+                "App_id",
+                "Approve_date",
+                "Name"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -755,36 +759,6 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "xn__Ngy_ng_k_0ya01a6bxj": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "Ngày đăng ký",
-                  "id": "xn__Ngy_ng_k_0ya01a6bxj",
-                  "alias": "Ngày đăng ký",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Ngày đăng ký",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Ngày đăng ký\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
                 "xn__Ngun_ng_k_89a5dxj5470b": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
@@ -841,36 +815,6 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"SĐT\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "xn__Tn_khch_hng_g7ai5j": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "Tên khách hàng",
-                  "id": "xn__Tn_khch_hng_g7ai5j",
-                  "alias": "Tên khách hàng",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Tên khách hàng",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tên khách hàng\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -965,36 +909,6 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "Application": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 7,
-                  "width": 150,
-                  "originalId": "Application",
-                  "id": "Application",
-                  "alias": "Application",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Application",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Application\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
                 "xn__Tnh_trng_ph_duyt_2qbz4165l9va": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
@@ -1021,6 +935,126 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Tình trạng phê duyệt\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "App_date": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "App_date",
+                  "id": "App_date",
+                  "alias": "App_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "App_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"App_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "App_id": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "App_id",
+                  "id": "App_id",
+                  "alias": "App_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "App_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"App_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Approve_date": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "Approve_date",
+                  "id": "Approve_date",
+                  "alias": "Approve_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Approve_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Approve_date\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Name": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 9,
+                  "width": 150,
+                  "originalId": "Name",
+                  "id": "Name",
+                  "alias": "Name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
