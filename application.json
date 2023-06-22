@@ -12,6 +12,9 @@
   "unpublishedAppLayout": {
     "type": "FLUID"
   },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "unpublishedCustomJSLibs": [
     {
       "uidString": "csv_parse_sync_https://cdn.jsdelivr.net/npm/csv-parse@5.4.0/dist/umd/sync.min.js"
