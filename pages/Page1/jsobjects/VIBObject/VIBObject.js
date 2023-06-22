@@ -17,11 +17,20 @@ export default {
 					datum.Name = item[i];
 				} else if (t === 'SĐT') {
 					datum.Phone_number = item[i];
-				} else {
-					datum[t] = item[i];	
+				} else if (t === 'Nguồn đăng ký') {
+					datum.Sales_code = item[i].replace('Affiliate_FIMIVIB-', '');
+					datum.Partner_code = 'FIMIVIB';
+				} else if (t === 'Tình trạng lead') {
+					datum.Status = item[i];
+				} else if (t === 'Tình trạng phê duyệt') {
+					datum.Step = item[i];
 				}
 				datum.ID_number = '';
 				datum.Approve_date = 'First';
+				datum.Rejection_reason = '';
+				datum.Product = 'FIMIVIB';
+				datum.Revenue = 0;
+				datum.FiPoint = 0;
 			})
 			
 			
