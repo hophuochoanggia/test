@@ -737,7 +737,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1687410101460,
+              "columnUpdatedAt": 1687410153324,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -745,8 +745,8 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "App_date",
                 "App_id",
+                "App_date",
                 "Approve_date",
                 "Name",
                 "ID_number",
@@ -755,10 +755,10 @@
                 "Status",
                 "Step",
                 "Rejection_reason",
+                "Partner_code",
                 "Product",
                 "Revenue",
-                "FiPoint",
-                "Partner_code"
+                "FiPoint"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -1213,7 +1213,7 @@
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
               "mobileLeftColumn": 0,
-              "isVisiblePagination": true,
+              "isVisiblePagination": false,
               "verticalAlignment": "CENTER"
             }
           ]
