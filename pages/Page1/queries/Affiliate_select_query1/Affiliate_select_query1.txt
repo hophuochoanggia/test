@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  public.affiliate
+WHERE
+  "Name" ilike '%{{Affiliate.searchText}}%' {{Affiliate.sortOrder.column ? "ORDER BY " + Affiliate.sortOrder.column + "  " + (Affiliate.sortOrder.order !== "desc" ? "" : "DESC") : ""}}
+LIMIT
+  {{Affiliate.pageSize}}
+OFFSET
+  {{Affiliate.pageOffset}}

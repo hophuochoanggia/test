@@ -1,0 +1,772 @@
+{
+  "unpublishedPage": {
+    "name": "Page1",
+    "slug": "page1",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 670,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "onSort": "{{\n            Affiliate_select_query1.run();\n            Affiliate_total_record_query1.run();\n          }}",
+              "isVisibleDownload": true,
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
+              "topRow": 2,
+              "isSortable": true,
+              "onPageChange": "{{\n            Affiliate_select_query1.run();\n            Affiliate_total_record_query1.run();\n          }}",
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "totalRecordsCount"
+                },
+                {
+                  "key": "primaryColumns.App_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.App_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Approve_date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Name.computedValue"
+                },
+                {
+                  "key": "primaryColumns.ID_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Phone_number.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Sales_code.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Status.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Step.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Rejection_reason.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Partner_code.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Product.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Revenue.computedValue"
+                },
+                {
+                  "key": "primaryColumns.FiPoint.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 1,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": false,
+              "version": 2,
+              "totalRecordsCount": "{{Affiliate_total_record_query1.data[0].count}}",
+              "isLoading": false,
+              "onSearchTextChanged": "{{\n            Affiliate_select_query1.run();\n            Affiliate_total_record_query1.run();\n          }}",
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1687334944668,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "mobileBottomRow": 30,
+              "widgetName": "Affiliate",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "App_id",
+                "App_date",
+                "Approve_date",
+                "Name",
+                "ID_number",
+                "Phone_number",
+                "Sales_code",
+                "Status",
+                "Step",
+                "Rejection_reason",
+                "Partner_code",
+                "Product",
+                "Revenue",
+                "FiPoint"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 32,
+              "columnWidthMap": {},
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 35,
+              "parentColumnSpace": 19.375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onPageChange"
+                },
+                {
+                  "key": "onSearchTextChanged"
+                },
+                {
+                  "key": "onSort"
+                }
+              ],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "App_id": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "App_id",
+                  "id": "App_id",
+                  "alias": "App_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "App_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"App_id\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "App_date": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "App_date",
+                  "id": "App_date",
+                  "alias": "App_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "date",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "App_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"App_date\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Approve_date": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "Approve_date",
+                  "id": "Approve_date",
+                  "alias": "Approve_date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Approve_date",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Approve_date\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Name": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Name",
+                  "id": "Name",
+                  "alias": "Name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Name\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "ID_number": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 4,
+                  "width": 150,
+                  "originalId": "ID_number",
+                  "id": "ID_number",
+                  "alias": "ID_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "ID_number",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ID_number\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Phone_number": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "Phone_number",
+                  "id": "Phone_number",
+                  "alias": "Phone_number",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Phone_number",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Phone_number\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Sales_code": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "Sales_code",
+                  "id": "Sales_code",
+                  "alias": "Sales_code",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Sales_code",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Sales_code\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Status": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "Status",
+                  "id": "Status",
+                  "alias": "Status",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Status",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Status\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Step": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "Step",
+                  "id": "Step",
+                  "alias": "Step",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Step",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Step\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Rejection_reason": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 9,
+                  "width": 150,
+                  "originalId": "Rejection_reason",
+                  "id": "Rejection_reason",
+                  "alias": "Rejection_reason",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Rejection_reason",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rejection_reason\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Partner_code": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "Partner_code",
+                  "id": "Partner_code",
+                  "alias": "Partner_code",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Partner_code",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Partner_code\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Product": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 11,
+                  "width": 150,
+                  "originalId": "Product",
+                  "id": "Product",
+                  "alias": "Product",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Product",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Product\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "Revenue": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 12,
+                  "width": 150,
+                  "originalId": "Revenue",
+                  "id": "Revenue",
+                  "alias": "Revenue",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Revenue",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Revenue\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                },
+                "FiPoint": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 13,
+                  "width": 150,
+                  "originalId": "FiPoint",
+                  "id": "FiPoint",
+                  "alias": "FiPoint",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "FiPoint",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Affiliate.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"FiPoint\"]))}}",
+                  "sticky": "",
+                  "validation": {}
+                }
+              },
+              "key": "vaxjhdb38e",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "textSize": "0.875rem",
+              "widgetId": "141w4p4ybl",
+              "minWidth": 450,
+              "tableData": "{{Affiliate_select_query1.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "mobileTopRow": 2,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 1,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 68,
+              "widgetName": "FilePicker1",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "FilePicker",
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.2c8bfbc118a7a5f7b61b10540a4a8881.svg",
+              "searchTags": [
+                "upload"
+              ],
+              "topRow": 34,
+              "bottomRow": 38,
+              "parentRowSpace": 10,
+              "allowedFileTypes": [],
+              "type": "FILE_PICKER_WIDGET_V2",
+              "hideCard": false,
+              "mobileRightColumn": 17,
+              "animateLoading": true,
+              "parentColumnSpace": 19.375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onFilesSelected"
+                }
+              ],
+              "leftColumn": 47,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "6tqjflo5gn",
+              "onFilesSelected": "{{VIBObject.transformAPI();}}",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "isDefaultClickDisabled": true,
+              "widgetId": "95316q4gv6",
+              "minWidth": 120,
+              "isVisible": true,
+              "label": "Select Files",
+              "maxFileSize": "20",
+              "dynamicTyping": true,
+              "version": 1,
+              "fileDataType": "Text",
+              "parentId": "0",
+              "selectedFiles": [],
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 64,
+              "responsiveBehavior": "hug",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 1,
+              "files": [],
+              "maxNumFiles": "1"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": true,
+              "iconSVG": "https://appcdn.appsmith.com/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
+              "topRow": 39,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 1,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 2,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1687333906255,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "mobileBottomRow": 69,
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 67,
+              "columnWidthMap": {},
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 14,
+              "parentColumnSpace": 19.375,
+              "borderWidth": "1",
+              "primaryColumns": {},
+              "key": "vaxjhdb38e",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "textSize": "0.875rem",
+              "widgetId": "05wcjv1f9e",
+              "minWidth": 450,
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 41,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 0,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Page1_Affiliate_select_query1",
+              "name": "Affiliate_select_query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Affiliate.sortOrder.column ? \"ORDER BY \" + Affiliate.sortOrder.column + \"  \" + (Affiliate.sortOrder.order !== \"desc\" ? \"\" : \"DESC\") : \"\"",
+                "Affiliate.pageSize",
+                "Affiliate.searchText",
+                "Affiliate.pageOffset"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_Affiliate_total_record_query1",
+              "name": "Affiliate_total_record_query1",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Page1",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "gitSyncId": "6492735d6acf861262c4a63a_6492735d6acf861262c4a63c"
+}

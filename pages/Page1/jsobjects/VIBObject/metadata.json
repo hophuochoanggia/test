@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "VIBObject",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "data",
+        "value": "[]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Page1_VIBObject",
+  "deleted": false,
+  "gitSyncId": "6492735d6acf861262c4a63a_6492b48d3619f10007cfd13e"
+}
